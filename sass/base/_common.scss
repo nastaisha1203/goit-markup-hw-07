@@ -1,0 +1,42 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $title-color;
+}
+img {
+  display: block;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.btn {
+  cursor: pointer;
+  min-width: 200px;
+  border-radius: 4px;
+  background-color: $accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-color: transparent;
+  color: $white-color;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

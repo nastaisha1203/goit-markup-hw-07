@@ -1,0 +1,28 @@
+.features-list {
+  display: flex;
+}
+.features-thumb {
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features-item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features-item__title {
+  @include font(null, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.feature-item__text {
+  @include font(null, 14px, 1.71, 0.03em);
+  color: $primary-color;
+}

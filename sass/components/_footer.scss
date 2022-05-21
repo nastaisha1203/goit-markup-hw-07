@@ -1,0 +1,119 @@
+.footer {
+  display: flex;
+  background-color: $background-dark;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.footer-cont__logo {
+  margin-bottom: 20px;
+}
+.logo__element {
+  color: $white-color;
+}
+.footer-contact__address {
+  font-style: normal;
+  @include font(null, 14px, 1.71, 0.03em);
+  color: $white-color;
+}
+.footer-contact__link {
+  font-style: normal;
+  @include font(null, 14px, 1.71, 0.03em);
+  color: $contacts-color;
+  transition: color $hover-efect;
+  &:hover,
+  &:focus {
+    color: $white-color;
+  }
+}
+
+.footer-contact__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-cont {
+  width: 231px;
+}
+.soc {
+  margin-left: 70px;
+}
+.soc-title {
+  margin-bottom: 20px;
+  @include font(null, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: $white-color;
+}
+.soc-list {
+  display: flex;
+  justify-content: center;
+}
+.soc-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+.soc-list__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  @extend %align-list;
+  transition: background-color $hover-efect;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.soc-list__icon {
+  fill: $white-color;
+}
+.subscription {
+  margin-left: 93px;
+}
+.subscription__label {
+  display: inline-block;
+  margin-bottom: 20px;
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+
+  color: $white-color;
+}
+.subscription__email {
+  min-width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  color: $white-color;
+  margin-right: 8px;
+  transition: border-color $hover-efect;
+  &:focus {
+    border-color: #2196f3;
+  }
+  &::placeholder {
+    font-style: normal;
+    @include font(400, 16px, 1.25, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscription__btn {
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  transition: box-shadow $hover-efect;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.subscription__icon {
+  margin-left: 10px;
+}

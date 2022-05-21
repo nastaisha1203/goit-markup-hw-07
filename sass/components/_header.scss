@@ -1,0 +1,88 @@
+.header {
+  background-color: $white-color;
+  border-bottom: 1px solid #ececec;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  display: block;
+  font-family: 'Raleway';
+  text-decoration: none;
+  @include font(700, 26px, 1.19, 0.03em);
+  color: $accent-color;
+}
+.logo__text {
+  color: #000000;
+}
+.header__logo {
+  margin-right: 93px;
+}
+.menu-list {
+  display: flex;
+}
+.menu-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-list__link {
+  display: block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include font(500, 14px, 1.14, 0.02em);
+  color: $title-color;
+  transition: color $hover-efect;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.menu-list__link--current {
+  color: $accent-color;
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+.contact-list__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include font(500, 14px, 1.14, 0.02em);
+  display: flex;
+  align-items: center;
+  color: $primary-color;
+  transition: color $hover-efect;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.contact-list__icon {
+  margin-right: 10px;
+  fill: $primary-color;
+  transition: fill $hover-efect;
+  .contact-list__link:hover &,
+  .contact-list__link:focus & {
+    fill: $accent-color;
+  }
+}
+
+.contact-list__item:not(:last-child) {
+  margin-right: 50px;
+}
