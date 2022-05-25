@@ -1,12 +1,15 @@
 .header {
   background-color: $white-color;
   border-bottom: 1px solid #ececec;
-  .container {
-    display: flex;
-    align-items: center;
-  }
+  // .container {
+  //   display: flex;
+  //   align-items: center;
+  // }
 }
-
+.header__container {
+  display: flex;
+  align-items: center;
+}
 .logo {
   display: block;
   font-family: 'Raleway';

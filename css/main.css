@@ -9,25 +9,22 @@ h6 {
 }
 
 ul {
+  list-style: none;
   padding-left: 0;
   margin: 0;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: #212121;
 }
 
 img {
   display: block;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
-.list {
-  list-style: none;
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
 }
 
 .title {
@@ -86,7 +83,8 @@ img {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
-.header .container {
+
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -220,11 +218,11 @@ img {
   background-color: #188ce8;
 }
 
-.features-list {
+.features {
   display: flex;
 }
 
-.features-thumb {
+.features__thumb {
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
@@ -234,14 +232,14 @@ img {
   align-items: center;
 }
 
-.features-item {
+.features__item {
   width: 270px;
 }
-.features-item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.features-item__title {
+.features__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -249,7 +247,7 @@ img {
   margin-bottom: 10px;
 }
 
-.feature-item__text {
+.features__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
